@@ -1,0 +1,101 @@
+<!--Copyright (c) 2022 Steven Ge. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Image quiz game</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+  <div class="bg-dark show" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Image quiz game created using mostly pure javascript with some jQuery. Bootstrap is used to make the website look decent.</br><span style="color:red">Do no forget to save your decks!</span></p>
+        </div>
+        <div class="col-sm-2 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://ge-steven.github.io" class="text-white">Personal website</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 py-4">
+          <h4 class="text-white">Import Collection</h4></br>
+          <input style="color:white" type="file" id="browseButton" class="btn btn-sm btn-outline-secondary" value="Import"></input>
+          <button style="color:white" id="importButton" type="button" class="btn btn-sm btn-outline-secondary">Import</button>
+        </div>
+        <div class="col-sm-2 py-4">
+          <h4 class="text-white">Download Collection</h4>
+          <button style="color:white" onclick="download(data)" type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" onclick="closeGame()" class="navbar-brand d-flex align-items-center">
+        <strong>Image quiz game</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main role="main">
+
+  <div class="album py-5 bg-light">
+    <div class="container" id="container">
+
+      <div class="row" id="items">
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script src="assets/js/lib/jquery-3.5.1.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/assets/auxiliary-functions.js"></script>
+      <script src="assets/js/assets/global.js"></script>
+      <script src="assets/js/assets/game.js"></script>
+      <script src="assets/js/assets/main-menu.js"></script>
+</html>
